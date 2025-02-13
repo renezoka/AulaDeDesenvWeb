@@ -1,8 +1,24 @@
 1.
+O HTML é considerado uma linguagem de marcação, utilizado na construção de páginas na web;
+Essa linguagem é essencial no desenvolvimento web ao incluir textos, imagens, links etc nas páginas webs. 
 
 2.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 
 3.
+O HTML5 tem suporte nativo para audio e video, 
+tem reprodução de conteúdo multimídia de forma mais eficiente 
+e tem novos elementos semanticos
 
 4.
 
