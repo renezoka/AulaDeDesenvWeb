@@ -21,10 +21,39 @@ tem reprodução de conteúdo multimídia de forma mais eficiente
 e tem novos elementos semanticos
 
 4.
+Os elementos HTML são os tijolos de construção de uma página da internet e 
+os atributos são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento.
 
+<!DOCUMENT html>
+<html>
+<body>
+
+<h1>Atributo link</h1>
+<p><a href="https://www.w3.org/" target="_blank">Link vazio</a></p>
+
+</body>
+</html>
+     
 5.
+<ol>
+É uma lista em que a ordem dos elementos é significativa
+
+<ul>
+É uma lista em que a ordem dos elementos não é significativa
+
+<dl>
+É uma lista de termos e descrições
 
 6.
+<article> 
+Tem como objetivo ser independentemente distribuível ou reutilizável
+
+<header>
+É geralmente encontrado no topo de um documento, uma seção ou um artigo e geralmente contém o cabeçalho principal da página 
+e algumas navegações e barras de busca.
+
+<aside> 
+É destinado a conteúdos que não fazem parte do fluxo do texto, mas que, ainda sim, estão relacionados de alguma forma
 
 7.
 
