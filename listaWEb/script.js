@@ -23,6 +23,6 @@ function addTask(){
         element.parentElement.classList.toggle("completed");
     }
 
-    function removeTask(buttom){
+    function deleteTask(buttom){
         buttom.parentElement.remove();
     }
