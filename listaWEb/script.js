@@ -15,6 +15,7 @@ function addTask(){
     <buttom class="delete-btn" onclick="deleteTask(this)">X</buttom>
     `
     taskList.appendChild(item);
+    saveTask();
 
     
     }
@@ -25,4 +26,34 @@ function addTask(){
 
     function deleteTask(buttom){
         buttom.parentElement.remove();
+    }
+    function saveTask(){
+        let tasks = [];
+
+        document.querySelectorAll("#taskList li").forEach(task => {
+            tasks.push({
+                tarefa: task.innerText.trim(),
+                status: task.classList.contains("completed")
+            });
+        });
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    
+    }
+
+    function loadTask(){
+        let task =JSON.parse(localStorage.getItem("tasks")) || [];
+
+        tasks.forEach((tasks) => {
+            let li = document.createElement("li");
+
+            li.innerHTML = `
+            <span onclick="toggleTask(this)">${task.tarefa}</span>
+            <button class="delete-btn" onclick="deleteTask(this)">X</button>
+            `;
+            if(task.status){
+                li.classList.add("completed");
+            }
+            taskList.appendChild(li);
+        });
     }
